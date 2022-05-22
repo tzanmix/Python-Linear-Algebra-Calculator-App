@@ -1,0 +1,41 @@
+Ιωάννης Τσάμπρας(Ioannis Tsampras):
+Dynamic adding of tables
+Dynamic adding of functions
+Recording temporary history (undo,redo) with ghost tables
+Methods and atributtes for the Pinakas,Sunarthsh,Savie classes:
+view,delete,edit,info,hide,save_state
+New table and new function methods
+Clear and copy methods
+Results output configuration(together with Gennaios L.)
+Long term history for added functions and decoding of the functions archive
+Graphical user interface:
+dynamic entrybox number when adding new chart or editing(with preset values when editing)
+graphics for Pinakas and Sunarthsh
+dynamic alignment of frames and buttons on the main window(labels() and frame construction)
+Dynamic display resolution configuration
+hiding command line
+Return and Cancel buttons(together with Gennaios L.)
+Dynamic window sizes depending on their content(new table,info,execution of function etc)
+Defensive programming end user's-eror detection on inputs(wrong dimencions,unacceptable item type,undefined table,existing table name etc)
+Default functions option
+Contribution in numpy and scipy function modifications relative to datatype bugs				 
+Tutorial video	
+executable
+team coordination					 
+Total lines of Code: about 900 lines 
+
+Γενναίος Λυκουριότης(Gennaios Likouriotis):
+Menu and submenus
+Fully customizable colours for Results output and Main window
+Default display resolutions
+Creation of basic_clors.txt and light_colors.txt
+Dialogues when delεting charts or functions
+Total lines of Code:about 200 lines
+
+
+
+
+
+
+Special thanks to Sakis Ntourmas(Σάκης Ντούρμας) for his extended help,time and guidance 
+Also thanks to Professor Nikolaos Avouris (Νικόλαος Αβούρης) and Professor Assistant Christos Sintoris (Χρήστος Σιντόρης)

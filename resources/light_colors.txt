@@ -1,0 +1,25 @@
+light grey
+light slate blue
+light sky blue
+light steel blue
+light blue
+light cyan
+light sea green
+light goldenrod yellow
+light yellow
+light salmon
+light coral
+light pink
+LightSkyBlue1
+LightSkyBlue2
+LightSkyBlue3
+LightBlue1
+LightBlue2
+LightCyan2
+LightCyan3
+LightYellow2
+LightYellow3
+LightSalmon2
+LightPink1
+LightPink2
+LightPink3

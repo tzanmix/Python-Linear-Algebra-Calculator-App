@@ -1,0 +1,84 @@
+﻿Name: prosthesi
+NameGUI: πρόσθεση
+Info: άθροισμα 2 πινάκων ίδιων διαστάσεων
+Variables: 2
+Def:  #1# + #2#
+Check: np.shape(#1#)==np.shape(#2#)
+>
+Name: afairesh
+NameGUI: αφαίρεση
+Info: διαφορά 2 πινάκων ίδιων διαστάσεων
+Variables: 2
+Def:  #1# - #2#
+Check: np.shape(#1#)==np.shape(#2#)
+>
+Name: ba8m_pol
+NameGUI: β.πολλαπλασιασμός
+Info: πολλαπλασιασμός πίνακα με αριθμό
+Variables: 2
+Def: #1# * #2#
+Check: np.shape(#1#)==(1,1) or np.shape(#2#)==(1,1)
+>
+Name: pollapl
+NameGUI: πολλαπλασιασμός
+Info: πολλαπλασιασμός δύο πινάκων Α,Β με διαστάσεις nxm, mxp αντίστοιχα
+Variables: 2
+Def: np.dot(#1#,#2#)
+Check: #1#.shape[1]==#2#.shape[0]
+>
+Name: anastr
+NameGUI: αναστροφή
+Info: Ο πίνακας που προκύπτει αν διατάξουμε τις γραμμές του Α ως στήλες με την ίδια σειρά.
+Variables: 1
+Def: #1#.transpose()
+Check: True
+>
+Name: taksi
+NameGUI: τάξη
+Info: Τάξη ενός πίνακα ονομάζεται η διάσταση του μεγαλύτερου μη-ιδιάζοντος τετραγωνικού υποπίνακα που σχηματίζεται όταν επιλέξουμε μερικές (ή όλες) από τις γραμμές και στήλες του πίνακα
+Variables: 1
+Def: np.linalg.matrix_rank(#1#)
+Check: True
+>
+Name: ixnos
+NameGUI: ίχνος πίνακα
+Info: Ίχνος ενός τετραγωνικού πίνακα ονομάζεται το άθροισμα των στοιχειων της κύριας διαγωνίου του
+Variables: 1
+Def: np.trace(#1#)
+Check: #1#.shape[0]==#1#.shape[1]
+>
+Name: determinant
+NameGUI: ορίζουσα
+Info: Υπολογισμός ορίζουσας ενός πίνακα ίδιων διαστάσεων.
+Variables: 1
+Def: round(10000*(np.linalg.det(#1#)))/10000
+Check: #1#.shape[0]==#1#.shape[1]
+>
+Name: lu_decomposition_L
+NameGUI: LU Analysis L
+Info: Ένας πίνακας Α τετραγωνικός (nxn) μπορεί να παραγοντοποιηθεί σε γινόμενο πινάκων LU, όπου L κάτω τριγωνικός (με τα στοιχεία της κύριας διγωνίου του μονάδες) και U άνω τριγωνικός.
+Variables: 1
+Def: scipy.linalg.lu(#1#)[1]
+Check: #1#.shape[0]==#1#.shape[1]
+>
+Name: lu_decomposition_U
+NameGUI: LU Analysis U
+Info: Ένας πίνακας Α τετραγωνικός (nxn) μπορεί να παραγοντοποιηθεί σε γινόμενο πινάκων LU, όπου L κάτω τριγωνικός (με τα στοιχεία της κύριας διγωνίου του μονάδες) και U άνω τριγωνικός.
+Variables: 1
+Def: scipy.linalg.lu(#1#)[2]
+Check: #1#.shape[0]==#1#.shape[1]
+>
+Name: anw_trig
+NameGUI: Άνω τριγωνικός 
+Info: Μετατροπή ενός πίνακα Α σε έναν άλλο, στον οποίο όλα τα στοιχεία κάτω από την κύρια διαγώνιο είναι μηδέν. Ορίζεται για τετραγωνικό πίνακα.
+Variables:1
+Def: np.triu(#1#)
+Check: #1#.shape[0]==#1#.shape[1]
+>
+Name: katw_trig
+NameGUI: Κάτω τριγωνικός 
+Info: Μετατροπή ενός πίνακα Α σε έναν άλλο, στον οποίο όλα τα στοιχεία πάνω από την κύρια διαγώνιο είναι μηδέν.Ορίζεται για τετραγωνικό πίνακα.
+Variables: 1
+Def: np.tril(#1#)
+Check: #1#.shape[0]==#1#.shape[1]
+>
